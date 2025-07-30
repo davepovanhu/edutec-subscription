@@ -4,7 +4,24 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+
+// Configure CORS to allow specific origins
+const allowedOrigins = [
+  'http://127.0.0.1:5501', // Local development server
+  'https://edutec-subscription-1.onrender.com' // Replace with your static site URL
+];
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: ['GET', 'POST', 'OPTIONS'], // Allow OPTIONS for preflight
+  allowedHeaders: ['Content-Type'], // Allow necessary headers
+}));
+
 app.use(express.json());
 
 const SECRET_KEY = process.env.ADUMO_SECRET_KEY;
