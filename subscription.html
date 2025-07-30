@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTec - Subscription</title>
+    <link rel="stylesheet" href="/subscription.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/logo.png" alt="EduTec Logo">
+        </div>
+        <a href="/dashboard.html" class="nav-item">
+            <img src="/ICONS/dashboard-svgrepo-com.svg" alt="Dashboard icon">
+            Dashboard
+        </a>
+        <a href="/FindATutor.html" class="nav-item">
+            <img src="/ICONS/search.svg" alt="Search icon">
+            Find a Tutor
+        </a>
+        <a href="/Schedule.html" class="nav-item">
+            <img src="/ICONS/calendar.svg" alt="Calendar icon">
+            Schedule
+        </a>
+        <a href="/simulation.html" class="nav-item">
+            <img src="/ICONS/cardboard-vr-headset.svg" alt="Simulation icon">
+            Simulations
+        </a>
+        <a href="/StudyMaterials.html" class="nav-item">
+            <img src="/ICONS/books-svgrepo-com.svg" alt="study-materials icon">
+            Study Materials
+        </a>
+        <a href="/subscription.html" class="nav-item active">
+            <img src="/ICONS/payment.svg" alt="Subscription icon">
+            Subscription
+        </a>
+        <a href="/SignInAndSignUpPage/signIn.html" class="nav-item" id="logoutLink">
+            <img src="/ICONS/log-out.svg" alt="Logout icon">
+            Logout
+        </a>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <!-- Header with search and profile -->
+        <div class="header">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search">
+                <i class="material-icons search-icon">search</i>
+            </div>
+            
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <a href="/EditProfile.html">
+                        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Profile" class="profile-pic" id="profilePic">
+                        <span class="edit-icon" id="editProfile">✎</span>
+                    </a>
+                </div>
+                <div class="user-info">
+                    <div class="user-name" id="userFullName">Loading profile...</div>
+                    <div class="user-role">Student</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New white top bar -->
+        <div class="top-bar"></div>
+
+        <div class="content-section">
+            <h1 class="section-title">Subscription</h1>
+            
+            <div class="subscription-container">
+                <div class="subscription-header">
+                    <p>Unlock premium learning experiences with our tailored plans.</p>
+                </div>
+                
+                <div class="plans-container">
+                    <!-- Beginner Plan -->
+                    <div class="plan-card" data-plan="Beginner">
+                        <div class="plan-card-content">
+                            <div class="plan-top">
+                                <div class="plan-title">Beginner</div>
+                                <div class="plan-price">USD50</div>
+                                <div class="plan-period">paid annually</div>
+                            </div>
+                            
+                            <div class="plan-bottom">
+                                <button class="plan-button" data-plan="Beginner">Get Started</button>
+                                <div class="plan-divider"></div>
+                                
+                                <div class="plan-benefits">
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon available">
+                                            <span style="font-size: 14px; font-weight: bold;">✓</span>
+                                        </div>
+                                        <span>Package benefit one</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon available">
+                                            <span style="font-size: 14px; font-weight: bold;">✓</span>
+                                        </div>
+                                        <span>Package benefit two</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon unavailable">
+                                            <span style="font-size: 14px; font-weight: bold;">✕</span>
+                                        </div>
+                                        <span>Package benefit three</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon unavailable">
+                                            <span style="font-size: 14px; font-weight: bold;">✕</span>
+                                        </div>
+                                        <span>Package benefit four</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon unavailable">
+                                            <span style="font-size: 14px; font-weight: bold;">✕</span>
+                                        </div>
+                                        <span>Package benefit five</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Standard Plan -->
+                    <div class="plan-card" data-plan="Standard">
+                        <div class="plan-card-content">
+                            <div class="plan-top">
+                                <div class="plan-title">Standard</div>
+                                <div class="plan-price">USD150</div>
+                                <div class="plan-period">paid annually</div>
+                            </div>
+                            
+                            <div class="plan-bottom">
+                                <button class="plan-button" data-plan="Standard">Get Started</button>
+                                <div class="plan-divider"></div>
+                                
+                                <div class="plan-benefits">
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon available">
+                                            <span style="font-size: 14px; font-weight: bold;">✓</span>
+                                        </div>
+                                        <span>Package benefit one</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon available">
+                                            <span style="font-size: 14px; font-weight: bold;">✓</span>
+                                        </div>
+                                        <span>Package benefit two</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon available">
+                                            <span style="font-size: 14px; font-weight: bold;">✓</span>
+                                        </div>
+                                        <span>Package benefit three</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon unavailable">
+                                            <span style="font-size: 14px; font-weight: bold;">✕</span>
+                                        </div>
+                                        <span>Package benefit four</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon unavailable">
+                                            <span style="font-size: 14px; font-weight: bold;">✕</span>
+                                        </div>
+                                        <span>Package benefit five</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pro Plan -->
+                    <div class="plan-card" data-plan="Pro">
+                        <div class="plan-card-content">
+                            <div class="plan-top">
+                                <div class="plan-title">Pro</div>
+                                <div class="plan-price">USD250</div>
+                                <div class="plan-period">paid annually</div>
+                            </div>
+                            
+                            <div class="plan-bottom">
+                                <button class="plan-button" data-plan="Pro">Get Started</button>
+                                <div class="plan-divider"></div>
+                                
+                                <div class="plan-benefits">
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon available">
+                                            <span style="font-size: 14px; font-weight: bold;">✓</span>
+                                        </div>
+                                        <span>Package benefit one</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon available">
+                                            <span style="font-size: 14px; font-weight: bold;">✓</span>
+                                        </div>
+                                        <span>Package benefit two</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon available">
+                                            <span style="font-size: 14px; font-weight: bold;">✓</span>
+                                        </div>
+                                        <span>Package benefit three</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon available">
+                                            <span style="font-size: 14px; font-weight: bold;">✓</span>
+                                        </div>
+                                        <span>Package benefit four</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon available">
+                                            <span style="font-size: 14px; font-weight: bold;">✓</span>
+                                        </div>
+                                        <span>Package benefit five</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adumo Payment Form -->
+            <form
+                id="adumoForm"
+                method="post"
+                action="https://staging-apiv3.adumoonline.com/product/payment/v1/initialisevirtual"
+                style="display: none;"
+            >
+                <input type="hidden" name="puid" value="c88e2edb-1604-4857-8487-43f0138c33ac" />
+                <input type="hidden" name="MerchantID" value="9BA5008C-08EE-4286-A349-54AF91A621B0" />
+                <input type="hidden" name="ApplicationID" value="23ADADC0-DA2D-4DAC-A128-4845A5D71293" />
+                <input type="hidden" name="MerchantReference" id="MerchantReference" value="" />
+                <input type="hidden" name="Amount" id="Amount" />
+                <input type="hidden" name="Token" id="Token" value="" />
+                <input type="hidden" name="txtCurrencyCode" value="USD" />
+                <input type="hidden" name="RedirectSuccessfulURL" value="https://edutec-subscription-static.onrender.com/success.html" />
+                <input type="hidden" name="RedirectFailedURL" value="https://edutec-subscription-static.onrender.com/subscription.html" />
+
+                <!-- Product Details -->
+                <input type="hidden" name="Variable1" id="Variable1" />
+                <input type="hidden" name="ItemDescr1" id="ItemDescr1" />
+                <input type="hidden" name="ItemAmount1" id="ItemAmount1" />
+                <input type="hidden" name="Qty1" value="1" />
+            </form>
+
+            <!-- Debug Info -->
+            <div id="debugInfo" style="color: red; margin-top: 10px;"></div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-database-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/subscription.js"></script>
+</body>
+</html>
