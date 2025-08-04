@@ -8,7 +8,7 @@ const app = express();
 // Configure CORS to allow specific origins
 const allowedOrigins = [
   'http://127.0.0.1:5501', // Local development server
-  'https://edutec-subscription-1.onrender.com' // Replace with your static site URL
+  'https://edutec-subscription-static.onrender.com' // Your static site URL
 ];
 app.use(cors({
   origin: function (origin, callback) {
