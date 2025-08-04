@@ -24,7 +24,10 @@ app.use(cors({
 
 app.use(express.json());
 
-const SECRET_KEY = process.env.ADUMO_SECRET_KEY;
+// Add root route to confirm API is live
+app.get('/', (req, res) => {
+  res.send('API is live');
+});
 
 app.post('/generate-token', (req, res) => {
   const { amount, plan } = req.body;
@@ -44,7 +47,7 @@ app.post('/generate-token', (req, res) => {
     exp: Math.floor(Date.now() / 1000) + 600
   };
 
-  const token = jwt.sign(payload, SECRET_KEY);
+  const token = jwt.sign(payload, process.env.ADUMO_SECRET_KEY);
   res.json({ token, merchantReference: payload.mref });
 });
 
